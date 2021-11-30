@@ -112,8 +112,8 @@
                 <section class="section-search">
                     <div class="header-search">
                         <div class="cont-tabs">
-                            <div class="tab active">Business</div>
-                            <div class="tab">Franchise</div>
+                            <div class="tab active" data-form=".f-form">Business</div>
+                            <div class="tab" data-form=".s-form">Franchise</div>
                         </div>
                         <div class="total-number">
                             <span class="number">19,405</span>
@@ -121,14 +121,27 @@
                         </div>
                     </div>  
                     <div class="body-search">
-                        <form class="f-form">
+                        <form class="form f-form ">
                             <div class="part-input">
                                 <img class="icon-img" src="images/icon/icon-sector.svg" alt="sector" />
-                                <input type="text" placeholder="Sector" />
+                                <input type="text" placeholder="Sector" id="sectorInput1" />
                             </div>
                             <div class="part-input">
                                 <img class="icon-img" src="images/icon/icon-location.svg" alt="location" />
-                                <input type="text" placeholder="Location" />
+                                <input type="text" placeholder="Location" id="locationInput1" />
+                            </div>
+                            <div class="part-submit">
+                                <input type="submit" value="Search" />
+                            </div>
+                        </form>
+                        <form class="form s-form">
+                            <div class="part-input">
+                                <img class="icon-img" src="images/icon/icon-sector.svg" alt="sector" />
+                                <input type="text" placeholder="Second Sector" id="sectorInput2" />
+                            </div>
+                            <div class="part-input">
+                                <img class="icon-img" src="images/icon/icon-location.svg" alt="location" />
+                                <input type="text" placeholder="Second Location" id="locationInput2" />
                             </div>
                             <div class="part-submit">
                                 <input type="submit" value="Search" />
@@ -151,14 +164,218 @@
 
                 </section>
                </div>
-            </div>
- 
+            </div> 
         </div>
-
         <!-- End Landing Section -->
 
     </header>
     <!-- End Header  -->
+
+    <!-- Start Featured Brokers Section  -->
+    <section class="featured-brokers-section">
+        <div class="container">
+            <h2 class="large-title">Featured Brokers</h2>
+            <div class="carousel-logo">
+                <!-- Part Arrow Left and Right -->
+                <div class="arrow-part">
+                    <div class="left-arrow arrowleft-lHtmlg">
+                        <img src="images/icon/arrow-left.png" alt="arrow" />
+                    </div>
+                    <div class="right-arrow arrowright-lHtmlg">
+                        <img src="images/icon/arrow-right.png" alt="arrow" />					
+                    </div>				
+                </div>
+                <!-- Part Section All Logos  -->
+                <div class="cont-logos">
+                    <!-- logo number 01 -->
+                    <div class="logo-container l-lHtmlg" data-id="0">
+                        <img class="logo-img" id="swipe" data-id="lHtmlg" src="images/brokers/template-size.jpg" alt="logo">
+                    </div>
+                    <!-- logo number 02 -->
+                    <div class="logo-container l-lHtmlg" data-id="0">
+                        <img class="logo-img" id="swipe" data-id="lHtmlg" src="images/brokers/template-size.jpg" alt="logo">
+                    </div>
+                    <!-- logo number 03 -->
+                    <div class="logo-container l-lHtmlg" data-id="0">
+                        <img class="logo-img" id="swipe" data-id="lHtmlg" src="images/brokers/template-size.jpg" alt="logo">
+                    </div>
+                    <!-- logo number 04 -->
+                    <div class="logo-container l-lHtmlg" data-id="0">
+                        <img class="logo-img" id="swipe" data-id="lHtmlg" src="images/brokers/template-size.jpg" alt="logo">
+                    </div>
+                    <!-- logo number 05 -->
+                    <div class="logo-container l-lHtmlg" data-id="0" data-select="exact">
+                        <img class="logo-img" id="swipe" data-id="lHtmlg" src="images/brokers/template-size.jpg" alt="logo">
+                    </div>
+                    <!-- logo number 06 -->
+                    <div class="logo-container l-lHtmlg" data-id="0" data-select="exact">
+                        <img class="logo-img" id="swipe" data-id="lHtmlg" src="images/brokers/template-size.jpg" alt="logo">
+                    </div>
+                    <!-- logo number 07 -->
+                    <div class="logo-container l-lHtmlg" data-id="0" data-select="exact">
+                        <img class="logo-img" id="swipe" data-id="lHtmlg" src="images/brokers/template-size.jpg" alt="logo">
+                    </div>
+                    <!-- logo number 08 -->
+                    <div class="logo-container l-lHtmlg" data-id="0" data-select="exact">
+                        <img class="logo-img" id="swipe" data-id="lHtmlg" src="images/brokers/template-size.jpg" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Featured Brokers Section  -->
+
+    <!-- Start Most Popular Section -->
+    <section class="most-popular-section">
+        <div class="container">
+            <h3 class="small-title">Popular Sectors</h3>
+            <h2 class="large-title">Most Popular Sectors & Locations</h2>
+            <div class="cont-box-select">
+                <ul class="select-part">
+                    <li class="select-element active" data-content=".content-all">All</li>
+                    <li class="select-element" data-content=".content-sectors">Sectors</li>
+                    <li class="select-element" data-content=".content-locations">Locations</li>
+                </ul>
+            </div>
+            <div class="container-of-all-tabs">
+                <!-- Start Container Tab: All -->
+                <div class="all-container-cards card-selector content-all"> 
+                    <!-- Start Card 01 -->
+                    <div class="child-card">
+                        <div class="main-card f-box">
+                            <a class="link-main-card" href="#">
+                                <div class="overlay">Placeholder</div>                        
+                                <div class="cont-img" style="background-image: url('images/most/img-m-01.jpg')"></div>
+                            </a>
+                        </div>
+                    </div>  
+                    <!-- Start Card 02 -->
+                    <div class="child-card">
+                        <!-- main card 01 -->
+                        <div class="main-card s-box">
+                            <a class="link-main-card" href="#">
+                                <div class="overlay">Placeholder</div>                        
+                                <div class="cont-img" style="background-image: url('images/most/img-m-02.jpg')"></div>
+                            </a>
+                        </div>
+                        <!-- main card 02 -->
+                        <div class="main-card t-box">
+                            <a class="link-main-card" href="#">
+                                <div class="overlay">Placeholder</div>                        
+                                <div class="cont-img" style="background-image: url('images/most/img-m-03.jpg')"></div>
+                            </a>
+                        </div>
+                    </div>  
+                    <!-- Start Card 03 -->
+                    <div class="child-card">
+                        <div class="main-card frd-box">
+                            <a class="link-main-card" href="#">
+                                <div class="overlay">Placeholder</div>                        
+                                <div class="cont-img" style="background-image: url('images/most/img-m-04.jpg')"></div>
+                            </a>
+                        </div>
+                    </div>             
+    
+                </div>
+
+                <!-- Start Container Tab: Sectors -->
+                <div class="sectors-container-cards card-selector content-sectors">
+                    <ul class="list-sectors" id="listSectros">
+                        <li class="li-sectors"><a href="#">Sectors jobs</a></li>
+                        <li class="li-sectors"><a href="#">Actuarial jobs</a></li>
+                        <li class="li-sectors"><a href="#">Admin, Secretarial</a></li>
+                        <li class="li-sectors"><a href="#">Apprenticeships jobs</a></li>
+                        <li class="li-sectors"><a href="#">Banking jobs</a></li>
+                        <li class="li-sectors"><a href="#">Accountancy jobs</a></li>
+                        <li class="li-sectors"><a href="#">Charity & Voluntary jobs</a></li>
+                        <li class="li-sectors"><a href="#">Construction & Property jobs</a></li>
+                        <li class="li-sectors"><a href="#">Customer Service jobs</a></li>
+                        <li class="li-sectors"><a href="#">Actuarial jobs</a></li>
+                        <li class="li-sectors"><a href="#">Education jobs</a></li>
+                        <li class="li-sectors"><a href="#">Actuarial jobs</a></li>
+                        <li class="li-sectors"><a href="#">Admin, Secretarial</a></li>
+                        <li class="li-sectors"><a href="#">Apprenticeships jobs</a></li>
+                        <li class="li-sectors"><a href="#">Banking jobs</a></li>
+                        <li class="li-sectors"><a href="#">Accountancy jobs</a></li>
+                        <li class="li-sectors"><a href="#">Charity & Voluntary jobs</a></li>
+                        <li class="li-sectors"><a href="#">Construction & Property jobs</a></li>
+                        <li class="li-sectors"><a href="#">Customer Service jobs</a></li>
+                        <li class="li-sectors"><a href="#">Actuarial jobs</a></li>
+                        <li class="li-sectors"><a href="#">Actuarial jobs</a></li>
+                        <li class="li-sectors"><a href="#">Customer Service jobs</a></li>
+                        <li class="li-sectors"><a href="#">Actuarial jobs</a></li>
+                        <li class="li-sectors"><a href="#">Education jobs</a></li>
+                        <li class="li-sectors"><a href="#">Actuarial jobs</a></li>
+                        <li class="li-sectors"><a href="#">Admin, Secretarial</a></li>
+                        <li class="li-sectors"><a href="#">Apprenticeships jobs</a></li>
+                        <li class="li-sectors"><a href="#">Banking jobs</a></li>
+                        <li class="li-sectors"><a href="#">Accountancy jobs</a></li>
+                        <li class="li-sectors"><a href="#">Charity & Voluntary jobs</a></li>
+                        <li class="li-sectors"><a href="#">Construction & Property jobs</a></li>
+                        <li class="li-sectors"><a href="#">Customer Service jobs</a></li>
+                        <li class="li-sectors"><a href="#">Actuarial jobs</a></li>
+                        <li class="li-sectors"><a href="#">Actuarial jobs</a></li>
+                    </ul>
+                    <div class="read-more-btn" id="seeMore1">
+                        <span>See More</span>
+                        <img src="images/icon/icon-down-blue.svg" alt="arrow">
+                    </div>
+ 
+                </div>
+
+                <!-- Start Container Tab: Locations -->
+                <div class="locations-container-cards card-selector content-locations">
+                    <ul class="list-locations" id="listLocations">
+                        <li class="li-locations"><a href="#">Locations jobs</a></li>
+                        <li class="li-locations"><a href="#">Actuarial jobs</a></li>
+                        <li class="li-locations"><a href="#">Admin, Secretarial</a></li>
+                        <li class="li-locations"><a href="#">Apprenticeships jobs</a></li>
+                        <li class="li-locations"><a href="#">Banking jobs</a></li>
+                        <li class="li-locations"><a href="#">Accountancy jobs</a></li>
+                        <li class="li-locations"><a href="#">Charity & Voluntary jobs</a></li>
+                        <li class="li-locations"><a href="#">Construction & Property jobs</a></li>
+                        <li class="li-locations"><a href="#">Customer Service jobs</a></li>
+                        <li class="li-locations"><a href="#">Actuarial jobs</a></li>
+                        <li class="li-locations"><a href="#">Education jobs</a></li>
+                        <li class="li-locations"><a href="#">Actuarial jobs</a></li>
+                        <li class="li-locations"><a href="#">Admin, Secretarial</a></li>
+                        <li class="li-locations"><a href="#">Apprenticeships jobs</a></li>
+                        <li class="li-locations"><a href="#">Banking jobs</a></li>
+                        <li class="li-locations"><a href="#">Accountancy jobs</a></li>
+                        <li class="li-locations"><a href="#">Charity & Voluntary jobs</a></li>
+                        <li class="li-locations"><a href="#">Construction & Property jobs</a></li>
+                        <li class="li-locations"><a href="#">Customer Service jobs</a></li>
+                        <li class="li-locations"><a href="#">Actuarial jobs</a></li>
+                        <li class="li-locations"><a href="#">Actuarial jobs</a></li>
+                        <li class="li-locations"><a href="#">Customer Service jobs</a></li>
+                        <li class="li-locations"><a href="#">Actuarial jobs</a></li>
+                        <li class="li-locations"><a href="#">Education jobs</a></li>
+                        <li class="li-locations"><a href="#">Actuarial jobs</a></li>
+                        <li class="li-locations"><a href="#">Admin, Secretarial</a></li>
+                        <li class="li-locations"><a href="#">Apprenticeships jobs</a></li>
+                        <li class="li-locations"><a href="#">Banking jobs</a></li>
+                        <li class="li-locations"><a href="#">Accountancy jobs</a></li>
+                        <li class="li-locations"><a href="#">Charity & Voluntary jobs</a></li>
+                        <li class="li-locations"><a href="#">Construction & Property jobs</a></li>
+                        <li class="li-locations"><a href="#">Customer Service jobs</a></li>
+                        <li class="li-locations"><a href="#">Actuarial jobs</a></li>
+                        <li class="li-locations"><a href="#">Actuarial jobs</a></li>
+                    </ul>
+                    <div class="read-more-btn" id="seeMore2">
+                        <span>See More</span>
+                        <img src="images/icon/icon-down-blue.svg" alt="arrow">
+                    </div>
+ 
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <!-- End Most Popular Section -->
 
 
 
